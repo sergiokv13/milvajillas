@@ -1,0 +1,1010 @@
+    <%= bootstrap_form_for(formulario) do |f| %>
+      <div class="field">
+        <%= f.text_field :nombre, :placeholder => "Ingresa tu nombre" %>
+      </div>
+
+      <div class="field">
+        <%= f.text_field :telefono, :placeholder => "Ingresa tu telefono de contacto" %>
+      </div>
+
+      <div class="field">
+        <%= f.text_field :correo , :placeholder => "Ingresa tu correo electronico"%>
+      </div>
+
+       <div class="field">
+        <%= f.text_field :direccion , :placeholder => "Ingresa tu dirección. Se lo mas preciso posible."%>
+      </div>
+
+      <h3>Reserva de items</h3>
+
+      <br><br>
+
+      <div class="row">
+        <div class = "col-lg-3">
+          <div class="row"> 
+            <div class = "col-lg-5">
+                <%= number_field_tag 'reserva["sillas_plasticas"]' , nil , :class=>"form-control",:placeholder =>"0" %> 
+            </div>
+            <div class ="col-lg-7">
+              Sillas Plásticas 
+              <br> Bs.- 100 c/u
+            </div>
+          </div>
+        </div>
+        <div class = "col-lg-3">
+          <div class="row"> 
+            <div class = "col-lg-5">
+               <%= number_field_tag 'reserva["cubresillas_con_mona"]' , nil , :class=>"form-control",:placeholder =>"0" %>  
+            </div>
+            <div class ="col-lg-7">
+              Cubresillas con Moña
+              <br> Bs.- 100 c/u
+            </div>
+          </div>
+        </div>
+        <div class = "col-lg-3">
+          <div class="row"> 
+            <div class = "col-lg-5">
+               <%= number_field_tag 'reserva["mesas_rectangulares_10_personas"]' , nil , :class=>"form-control",:placeholder =>"0" %>  
+            </div>
+            <div class ="col-lg-7">
+              Mesas Rectangulares (10 personas)
+              <br> Bs.- 100 c/u
+            </div>
+          </div>
+        </div>
+        <div class = "col-lg-3">
+          <div class="row"> 
+            <div class = "col-lg-5">
+               <%= number_field_tag 'reserva["manteles_rectangulares_10_personas"]' , nil , :class=>"form-control",:placeholder =>"0" %>  
+            </div>
+            <div class ="col-lg-7">
+              Manteles Rectangulares (10 personas)
+              <br> Bs.- 100 c/u
+            </div>
+          </div>
+        </div>   
+      </div>
+
+      <br><br>
+
+      <div class="row">
+        <div class = "col-lg-3">
+          <div class="row"> 
+            <div class = "col-lg-5">
+               <%= number_field_tag 'reserva["sobremanteles_rectangulares_10_personas"]' , nil , :class=>"form-control",:placeholder =>"0" %>  
+            </div>
+            <div class ="col-lg-7">
+              Sobremanteles Rectangulares (10 personas)
+              <br> Bs.- 100 c/u
+            </div>
+          </div>
+        </div>
+        <div class = "col-lg-3">
+          <div class="row"> 
+            <div class = "col-lg-5">
+               <%= number_field_tag 'reserva["mesas_redondas_10_personas"]' , nil , :class=>"form-control",:placeholder =>"0" %>  
+            </div>
+            <div class ="col-lg-7">
+              Mesas Redondas (10 personas)
+              <br> Bs.- 100 c/u
+            </div>
+          </div>
+        </div>
+        <div class = "col-lg-3">
+          <div class="row"> 
+            <div class = "col-lg-5">
+               <%= number_field_tag 'reserva["manteles_redondos_10_personas"]' , nil , :class=>"form-control",:placeholder =>"0" %>  
+            </div>
+            <div class ="col-lg-7">
+              Manteles Redondos (10 personas)
+              <br> Bs.- 100 c/u
+            </div>
+          </div>
+        </div>
+        <div class = "col-lg-3">
+          <div class="row"> 
+            <div class = "col-lg-5">
+               <%= number_field_tag 'reserva["sobremanteles_redondos_10_personas"]' , nil , :class=>"form-control",:placeholder =>"0" %>  
+            </div>
+            <div class ="col-lg-7">
+              Sobremanteles Redondos (10 personas)
+              <br> Bs.- 100 c/u
+            </div>
+          </div>
+        </div>   
+      </div>
+
+      <br><br>
+
+      <div class="row">
+        <div class = "col-lg-3">
+          <div class="row"> 
+            <div class = "col-lg-5">
+               <%= number_field_tag 'reserva["mesas_redondas_8_personas"]' , nil , :class=>"form-control",:placeholder =>"0" %>  
+            </div>
+            <div class ="col-lg-7">
+              Mesas Redondas (8 personas)
+              <br> Bs.- 100 c/u
+            </div>
+          </div>
+        </div>
+        <div class = "col-lg-3">
+          <div class="row"> 
+            <div class = "col-lg-5">
+               <%= number_field_tag 'reserva["manteles_redondos_8_personas"]' , nil , :class=>"form-control",:placeholder =>"0" %>  
+            </div>
+            <div class ="col-lg-7">
+              Manteles Redondos (8 personas)
+              <br> Bs.- 100 c/u
+            </div>
+          </div>
+        </div>
+        <div class = "col-lg-3">
+          <div class="row"> 
+            <div class = "col-lg-5">
+               <%= number_field_tag 'reserva["sobremanteles_rectangulares_8_personas"]' , nil , :class=>"form-control",:placeholder =>"0" %>  
+            </div>
+            <div class ="col-lg-7">
+              Sobremanteles Rectangulares (8 personas)
+              <br> Bs.- 100 c/u
+            </div>
+          </div>
+        </div>
+        <div class = "col-lg-3">
+          <div class="row"> 
+            <div class = "col-lg-5">
+               <%= number_field_tag 'reserva["mesas_rectangulares_6_personas"]' , nil , :class=>"form-control",:placeholder =>"0" %>  
+            </div>
+            <div class ="col-lg-7">
+              Mesas Rectangulares (6 personas)
+              <br> Bs.- 100 c/u
+            </div>
+          </div>
+        </div>   
+      </div>
+
+      <br><br>
+
+      <div class="row">
+        <div class = "col-lg-3">
+          <div class="row"> 
+            <div class = "col-lg-5">
+               <%= number_field_tag 'reserva["manteles_rectangulares_6_personas"]' , nil , :class=>"form-control",:placeholder =>"0" %>  
+            </div>
+            <div class ="col-lg-7">
+              Manteles Rectangulares (6 personas)
+              <br> Bs.- 100 c/u
+            </div>
+          </div>
+        </div>
+        <div class = "col-lg-3">
+          <div class="row"> 
+            <div class = "col-lg-5">
+               <%= number_field_tag 'reserva["sobremanteles_rectangulares"]' , nil , :class=>"form-control",:placeholder =>"0" %>  
+            </div>
+            <div class ="col-lg-7">
+              Sobremanteles Rectangulares
+              <br> Bs.- 100 c/u
+            </div>
+          </div>
+        </div>
+        <div class = "col-lg-3">
+          <div class="row"> 
+            <div class = "col-lg-5">
+               <%= number_field_tag 'reserva["servilletas"]' , nil , :class=>"form-control",:placeholder =>"0" %>  
+            </div>
+            <div class ="col-lg-7">
+              Servilletas
+              <br> Bs.- 100 c/u
+            </div>
+          </div>
+        </div>
+        <div class = "col-lg-3">
+          <div class="row"> 
+            <div class = "col-lg-5">
+               <%= number_field_tag 'reserva["mesas_de_plastico_4_personas"]' , nil , :class=>"form-control",:placeholder =>"0" %>  
+            </div>
+            <div class ="col-lg-7">
+              Mesas de Plastico (4 personas)
+              <br> Bs.- 100 c/u
+            </div>
+          </div>
+        </div>   
+      </div>
+
+      <br><br>
+
+      <div class="row">
+        <div class = "col-lg-3">
+          <div class="row"> 
+            <div class = "col-lg-5">
+               <%= number_field_tag 'reserva["manteles_4_personas"]' , nil , :class=>"form-control",:placeholder =>"0" %>  
+            </div>
+            <div class ="col-lg-7">
+              Manteles (4 personas)
+              <br> Bs.- 100 c/u
+            </div>
+          </div>
+        </div>
+        <div class = "col-lg-3">
+          <div class="row"> 
+            <div class = "col-lg-5">
+               <%= number_field_tag 'reserva["mesa_de_novios"]' , nil , :class=>"form-control",:placeholder =>"0" %>  
+            </div>
+            <div class ="col-lg-7">
+              Mesa de Novios
+              <br> Bs.- 100 c/u
+            </div>
+          </div>
+        </div>
+        <div class = "col-lg-3">
+          <div class="row"> 
+            <div class = "col-lg-5">
+               <%= number_field_tag 'reserva["mesa_para_torta"]' , nil , :class=>"form-control",:placeholder =>"0" %>  
+            </div>
+            <div class ="col-lg-7">
+              Mesa para Torta
+              <br> Bs.- 100 c/u
+            </div>
+          </div>
+        </div>
+        <div class = "col-lg-3">
+          <div class="row"> 
+            <div class = "col-lg-5">
+               <%= number_field_tag 'reserva["mesitas_de_nino_8_ninos"]' , nil , :class=>"form-control",:placeholder =>"0" %>  
+            </div>
+            <div class ="col-lg-7">
+              Mesitas de Niño (8 niños)
+              <br> Bs.- 100 c/u
+            </div>
+          </div>
+        </div>   
+      </div>
+
+      <br><br>
+
+      <div class="row">
+        <div class = "col-lg-3">
+          <div class="row"> 
+            <div class = "col-lg-5">
+               <%= number_field_tag 'reserva["mantelitos"]' , nil , :class=>"form-control",:placeholder =>"0" %>  
+            </div>
+            <div class ="col-lg-7">
+              Mantelitos
+              <br> Bs.- 100 c/u
+            </div>
+          </div>
+        </div>
+        <div class = "col-lg-3">
+          <div class="row"> 
+            <div class = "col-lg-5">
+               <%= number_field_tag 'reserva["sillitas_de_ninos"]' , nil , :class=>"form-control",:placeholder =>"0" %>  
+            </div>
+            <div class ="col-lg-7">
+              Sillitas de Niño
+              <br> Bs.- 100 c/u
+            </div>
+          </div>
+        </div>
+        <div class = "col-lg-3">
+          <div class="row"> 
+            <div class = "col-lg-5">
+               <%= number_field_tag 'reserva["mesita_de_ninos_4_ninos"]' , nil , :class=>"form-control",:placeholder =>"0" %>  
+            </div>
+            <div class ="col-lg-7">
+              Mesitas de Niño (4 niños)
+              <br> Bs.- 100 c/u
+            </div>
+          </div>
+        </div>
+        <div class = "col-lg-3">
+          <div class="row"> 
+            <div class = "col-lg-5">
+               <%= number_field_tag 'reserva["sombrillas"]' , nil , :class=>"form-control",:placeholder =>"0" %>  
+            </div>
+            <div class ="col-lg-7">
+              Sombrillas
+              <br> Bs.- 100 c/u
+            </div>
+          </div>
+        </div>   
+      </div>
+
+      <br><br>
+
+      <div class="row">
+        <div class = "col-lg-3">
+          <div class="row"> 
+            <div class = "col-lg-5">
+               <%= number_field_tag 'reserva["toldos_12x8"]' , nil , :class=>"form-control",:placeholder =>"0" %>  
+            </div>
+            <div class ="col-lg-7">
+              Toldos 12 x 8
+              <br> Bs.- 100 c/u
+            </div>
+          </div>
+        </div>
+        <div class = "col-lg-3">
+          <div class="row"> 
+            <div class = "col-lg-5">
+               <%= number_field_tag 'reserva["toldos_8x8"]' , nil , :class=>"form-control",:placeholder =>"0" %>  
+            </div>
+            <div class ="col-lg-7">
+              Toldos 8 x 8
+              <br> Bs.- 100 c/u
+            </div>
+          </div>
+        </div>
+        <div class = "col-lg-3">
+          <div class="row"> 
+            <div class = "col-lg-5">
+               <%= number_field_tag 'reserva["toldos_5x8"]' , nil , :class=>"form-control",:placeholder =>"0" %>  
+            </div>
+            <div class ="col-lg-7">
+              Toldos 5 x 8
+              <br> Bs.- 100 c/u
+            </div>
+          </div>
+        </div>
+        <div class = "col-lg-3">
+          <div class="row"> 
+            <div class = "col-lg-5">
+               <%= number_field_tag 'reserva["toldos_3x5"]' , nil , :class=>"form-control",:placeholder =>"0" %>  
+            </div>
+            <div class ="col-lg-7">
+              Toldos 3 x 5
+              <br> Bs.- 100 c/u
+            </div>
+          </div>
+        </div>   
+      </div>
+
+      <br><br>
+
+      <div class="row">
+        <div class = "col-lg-3">
+          <div class="row"> 
+            <div class = "col-lg-5">
+               <%= number_field_tag 'reserva["toldos_2x4"]' , nil , :class=>"form-control",:placeholder =>"0" %>  
+            </div>
+            <div class ="col-lg-7">
+              Toldos 2 x 4
+              <br> Bs.- 100 c/u
+            </div>
+          </div>
+        </div>
+        <div class = "col-lg-3">
+          <div class="row"> 
+            <div class = "col-lg-5">
+               <%= number_field_tag 'reserva["alfombra_roja"]' , nil , :class=>"form-control",:placeholder =>"0" %>  
+            </div>
+            <div class ="col-lg-7">
+              Alfombra Roja
+              <br> Bs.- 100 c/u
+            </div>
+          </div>
+        </div>
+        <div class = "col-lg-3">
+          <div class="row"> 
+            <div class = "col-lg-5">
+               <%= number_field_tag 'reserva["tarimas"]' , nil , :class=>"form-control",:placeholder =>"0" %>  
+            </div>
+            <div class ="col-lg-7">
+              Tarimas
+              <br> Bs.- 100 c/u
+            </div>
+          </div>
+        </div>
+        <div class = "col-lg-3">
+          <div class="row"> 
+            <div class = "col-lg-5">
+               <%= number_field_tag 'reserva["parrillas_grandes"]' , nil , :class=>"form-control",:placeholder =>"0" %>  
+            </div>
+            <div class ="col-lg-7">
+              Parrillas Grandes
+              <br> Bs.- 100 c/u
+            </div>
+          </div>
+        </div>   
+      </div>
+
+      <br><br>
+
+      <div class="row">
+        <div class = "col-lg-3">
+          <div class="row"> 
+            <div class = "col-lg-5">
+               <%= number_field_tag 'reserva["parrillas_pequenas"]' , nil , :class=>"form-control",:placeholder =>"0" %>  
+            </div>
+            <div class ="col-lg-7">
+              Parrillas Pequeñas
+              <br> Bs.- 100 c/u
+            </div>
+          </div>
+        </div>
+        <div class = "col-lg-3">
+          <div class="row"> 
+            <div class = "col-lg-5">
+               <%= number_field_tag 'reserva["garzones"]' , nil , :class=>"form-control",:placeholder =>"0" %>  
+            </div>
+            <div class ="col-lg-7">
+              Garzones
+              <br> Bs.- 100 c/u
+            </div>
+          </div>
+        </div>
+        <div class = "col-lg-3">
+          <div class="row"> 
+            <div class = "col-lg-5">
+               <%= number_field_tag 'reserva["carroza"]' , nil , :class=>"form-control",:placeholder =>"0" %>  
+            </div>
+            <div class ="col-lg-7">
+              Carroza
+              <br> Bs.- 100 c/u
+            </div>
+          </div>
+        </div>
+        <div class = "col-lg-3">
+          <div class="row"> 
+            <div class = "col-lg-5">
+               <%= number_field_tag 'reserva["juegos_inflables"]' , nil , :class=>"form-control",:placeholder =>"0" %>  
+            </div>
+            <div class ="col-lg-7">
+              Juegos Inflables
+              <br> Bs.- 100 c/u
+            </div>
+          </div>
+        </div>   
+      </div>
+
+      <br><br>
+
+      <div class="row">
+        <div class = "col-lg-3">
+          <div class="row"> 
+            <div class = "col-lg-5">
+               <%= number_field_tag 'reserva["copas_champagneras"]' , nil , :class=>"form-control",:placeholder =>"0" %>  
+            </div>
+            <div class ="col-lg-7">
+              Copas Champagneras
+              <br> Bs.- 100 c/u
+            </div>
+          </div>
+        </div>
+        <div class = "col-lg-3">
+          <div class="row"> 
+            <div class = "col-lg-5">
+               <%= number_field_tag 'reserva["copas_vino_blanco"]' , nil , :class=>"form-control",:placeholder =>"0" %>  
+            </div>
+            <div class ="col-lg-7">
+              Copas Vino Blanco
+              <br> Bs.- 100 c/u
+            </div>
+          </div>
+        </div>
+        <div class = "col-lg-3">
+          <div class="row"> 
+            <div class = "col-lg-5">
+               <%= number_field_tag 'reserva["copas_vino_tinto"]' , nil , :class=>"form-control",:placeholder =>"0" %>  
+            </div>
+            <div class ="col-lg-7">
+              Copas Vino Tinto
+              <br> Bs.- 100 c/u
+            </div>
+          </div>
+        </div>
+        <div class = "col-lg-3">
+          <div class="row"> 
+            <div class = "col-lg-5">
+               <%= number_field_tag 'reserva["copas_agua"]' , nil , :class=>"form-control",:placeholder =>"0" %>  
+            </div>
+            <div class ="col-lg-7">
+              Copas Agua
+              <br> Bs.- 100 c/u
+            </div>
+          </div>
+        </div>   
+      </div>
+
+      <br><br>
+
+      <div class="row">
+        <div class = "col-lg-3">
+          <div class="row"> 
+            <div class = "col-lg-5">
+               <%= number_field_tag 'reserva["vasos_cerveceros"]' , nil , :class=>"form-control",:placeholder =>"0" %>  
+            </div>
+            <div class ="col-lg-7">
+              Vasos Cerveceros
+              <br> Bs.- 100 c/u
+            </div>
+          </div>
+        </div>
+        <div class = "col-lg-3">
+          <div class="row"> 
+            <div class = "col-lg-5">
+               <%= number_field_tag 'reserva["vasos_largos"]' , nil , :class=>"form-control",:placeholder =>"0" %>  
+            </div>
+            <div class ="col-lg-7">
+              Vasos Largos
+              <br> Bs.- 100 c/u
+            </div>
+          </div>
+        </div>
+        <div class = "col-lg-3">
+          <div class="row"> 
+            <div class = "col-lg-5">
+               <%= number_field_tag 'reserva["vasos_para_whisky"]' , nil , :class=>"form-control",:placeholder =>"0" %>  
+            </div>
+            <div class ="col-lg-7">
+              Vasos para Whisky
+              <br> Bs.- 100 c/u
+            </div>
+          </div>
+        </div>
+        <div class = "col-lg-3">
+          <div class="row"> 
+            <div class = "col-lg-5">
+               <%= number_field_tag 'reserva["vasos_cockteleros"]' , nil , :class=>"form-control",:placeholder =>"0" %>  
+            </div>
+            <div class ="col-lg-7">
+              Vasos Cockteleros
+              <br> Bs.- 100 c/u
+            </div>
+          </div>
+        </div>   
+      </div>
+
+      <br><br>
+
+      <div class="row">
+        <div class = "col-lg-3">
+          <div class="row"> 
+            <div class = "col-lg-5">
+               <%= number_field_tag 'reserva["ceniceros"]' , nil , :class=>"form-control",:placeholder =>"0" %>  
+            </div>
+            <div class ="col-lg-7">
+              Ceniceros
+              <br> Bs.- 100 c/u
+            </div>
+          </div>
+        </div>
+        <div class = "col-lg-3">
+          <div class="row"> 
+            <div class = "col-lg-5">
+               <%= number_field_tag 'reserva["hieleras_con_pinzas"]' , nil , :class=>"form-control",:placeholder =>"0" %>  
+            </div>
+            <div class ="col-lg-7">
+              Hieleras con Pinzas
+              <br> Bs.- 100 c/u
+            </div>
+          </div>
+        </div>
+        <div class = "col-lg-3">
+          <div class="row"> 
+            <div class = "col-lg-5">
+               <%= number_field_tag 'reserva["jarras_grandes"]' , nil , :class=>"form-control",:placeholder =>"0" %>  
+            </div>
+            <div class ="col-lg-7">
+              Jarras Grandes
+              <br> Bs.- 100 c/u
+            </div>
+          </div>
+        </div>
+        <div class = "col-lg-3">
+          <div class="row"> 
+            <div class = "col-lg-5">
+               <%= number_field_tag 'reserva["jarras_medianas"]' , nil , :class=>"form-control",:placeholder =>"0" %>  
+            </div>
+            <div class ="col-lg-7">
+              Jarras Medianas
+              <br> Bs.- 100 c/u
+            </div>
+          </div>
+        </div>   
+      </div>
+
+      <br><br>
+
+      <div class="row">
+        <div class = "col-lg-3">
+          <div class="row"> 
+            <div class = "col-lg-5">
+               <%= number_field_tag 'reserva["jarras_pequenas"]' , nil , :class=>"form-control",:placeholder =>"0" %>  
+            </div>
+            <div class ="col-lg-7">
+              Jarras Pequeñas
+              <br> Bs.- 100 c/u
+            </div>
+          </div>
+        </div>
+        <div class = "col-lg-3">
+          <div class="row"> 
+            <div class = "col-lg-5">
+               <%= number_field_tag 'reserva["charolas_rectangulares"]' , nil , :class=>"form-control",:placeholder =>"0" %>  
+            </div>
+            <div class ="col-lg-7">
+              Charolas Rectangulares
+              <br> Bs.- 100 c/u
+            </div>
+          </div>
+        </div>
+        <div class = "col-lg-3">
+          <div class="row"> 
+            <div class = "col-lg-5">
+               <%= number_field_tag 'reserva["charolas_redondas"]' , nil , :class=>"form-control",:placeholder =>"0" %>  
+            </div>
+            <div class ="col-lg-7">
+              Charolas Redondas
+              <br> Bs.- 100 c/u
+            </div>
+          </div>
+        </div>
+        <div class = "col-lg-3">
+          <div class="row"> 
+            <div class = "col-lg-5">
+               <%= number_field_tag 'reserva["charolitas"]' , nil , :class=>"form-control",:placeholder =>"0" %>  
+            </div>
+            <div class ="col-lg-7">
+              Charolitas
+              <br> Bs.- 100 c/u
+            </div>
+          </div>
+        </div>   
+      </div>
+
+      <br><br>
+
+      <div class="row">
+        <div class = "col-lg-3">
+          <div class="row"> 
+            <div class = "col-lg-5">
+               <%= number_field_tag 'reserva["platos_hondos_normales"]' , nil , :class=>"form-control",:placeholder =>"0" %>  
+            </div>
+            <div class ="col-lg-7">
+              Platos Hondos Normales
+              <br> Bs.- 100 c/u
+            </div>
+          </div>
+        </div>
+        <div class = "col-lg-3">
+          <div class="row"> 
+            <div class = "col-lg-5">
+               <%= number_field_tag 'reserva["platos_planos_normales"]' , nil , :class=>"form-control",:placeholder =>"0" %>  
+            </div>
+            <div class ="col-lg-7">
+              Platos Planos Normales
+              <br> Bs.- 100 c/u
+            </div>
+          </div>
+        </div>
+        <div class = "col-lg-3">
+          <div class="row"> 
+            <div class = "col-lg-5">
+               <%= number_field_tag 'reserva["platos_hondos_frances"]' , nil , :class=>"form-control",:placeholder =>"0" %>  
+            </div>
+            <div class ="col-lg-7">
+              Platos Hondos Frances
+              <br> Bs.- 100 c/u
+            </div>
+          </div>
+        </div>
+        <div class = "col-lg-3">
+          <div class="row"> 
+            <div class = "col-lg-5">
+               <%= number_field_tag 'reserva["platos_planos_frances"]' , nil , :class=>"form-control",:placeholder =>"0" %>  
+            </div>
+            <div class ="col-lg-7">
+              Platos Planos Frances
+              <br> Bs.- 100 c/u
+            </div>
+          </div>
+        </div>   
+      </div>
+
+      <br><br>
+
+      <div class="row">
+        <div class = "col-lg-3">
+          <div class="row"> 
+            <div class = "col-lg-5">
+               <%= number_field_tag 'reserva["platos_base_frances"]' , nil , :class=>"form-control",:placeholder =>"0" %>  
+            </div>
+            <div class ="col-lg-7">
+              Platos Base Frances
+              <br> Bs.- 100 c/u
+            </div>
+          </div>
+        </div>
+        <div class = "col-lg-3">
+          <div class="row"> 
+            <div class = "col-lg-5">
+               <%= number_field_tag 'reserva["platillos_frances"]' , nil , :class=>"form-control",:placeholder =>"0" %>  
+            </div>
+            <div class ="col-lg-7">
+              Platillos Frances
+              <br> Bs.- 100 c/u
+            </div>
+          </div>
+        </div>
+        <div class = "col-lg-3">
+          <div class="row"> 
+            <div class = "col-lg-5">
+               <%= number_field_tag 'reserva["platillos_para_saladitos"]' , nil , :class=>"form-control",:placeholder =>"0" %>  
+            </div>
+            <div class ="col-lg-7">
+              Platillos para Saladitos
+              <br> Bs.- 100 c/u
+            </div>
+          </div>
+        </div>
+        <div class = "col-lg-3">
+          <div class="row"> 
+            <div class = "col-lg-5">
+               <%= number_field_tag 'reserva["pescaderas"]' , nil , :class=>"form-control",:placeholder =>"0" %>  
+            </div>
+            <div class ="col-lg-7">
+              Pescaderas
+              <br> Bs.- 100 c/u
+            </div>
+          </div>
+        </div>   
+      </div>
+
+      <br><br>
+
+      <div class="row">
+        <div class = "col-lg-3">
+          <div class="row"> 
+            <div class = "col-lg-5">
+               <%= number_field_tag 'reserva["tenedores_y_cuchillos"]' , nil , :class=>"form-control",:placeholder =>"0" %>  
+            </div>
+            <div class ="col-lg-7">
+              Tenedores y Cuchillos
+              <br> Bs.- 100 c/u
+            </div>
+          </div>
+        </div>
+        <div class = "col-lg-3">
+          <div class="row"> 
+            <div class = "col-lg-5">
+               <%= number_field_tag 'reserva["cucharas"]' , nil , :class=>"form-control",:placeholder =>"0" %>  
+            </div>
+            <div class ="col-lg-7">
+              Cucharas
+              <br> Bs.- 100 c/u
+            </div>
+          </div>
+        </div>
+        <div class = "col-lg-3">
+          <div class="row"> 
+            <div class = "col-lg-5">
+               <%= number_field_tag 'reserva["cucharillas"]' , nil , :class=>"form-control",:placeholder =>"0" %>  
+            </div>
+            <div class ="col-lg-7">
+              Cucharillas
+              <br> Bs.- 100 c/u
+            </div>
+          </div>
+        </div>
+        <div class = "col-lg-3">
+          <div class="row"> 
+            <div class = "col-lg-5">
+               <%= number_field_tag 'reserva["tenedor_torta"]' , nil , :class=>"form-control",:placeholder =>"0" %>  
+            </div>
+            <div class ="col-lg-7">
+              Tenedor Torta
+              <br> Bs.- 100 c/u
+            </div>
+          </div>
+        </div>   
+      </div>
+
+      <br><br>
+
+      <div class="row">
+        <div class = "col-lg-3">
+          <div class="row"> 
+            <div class = "col-lg-5">
+               <%= number_field_tag 'reserva["pirex"]' , nil , :class=>"form-control",:placeholder =>"0" %>  
+            </div>
+            <div class ="col-lg-7">
+              Pirex
+              <br> Bs.- 100 c/u
+            </div>
+          </div>
+        </div>
+        <div class = "col-lg-3">
+          <div class="row"> 
+            <div class = "col-lg-5">
+               <%= number_field_tag 'reserva["piezas_para_carne_o_ensalada"]' , nil , :class=>"form-control",:placeholder =>"0" %>  
+            </div>
+            <div class ="col-lg-7">
+              Piezas para Carne o Ensalada
+              <br> Bs.- 100 c/u
+            </div>
+          </div>
+        </div>
+        <div class = "col-lg-3">
+          <div class="row"> 
+            <div class = "col-lg-5">
+               <%= number_field_tag 'reserva["cucharas_grandes"]' , nil , :class=>"form-control",:placeholder =>"0" %>  
+            </div>
+            <div class ="col-lg-7">
+              Cucharas Grandes
+              <br> Bs.- 100 c/u
+            </div>
+          </div>
+        </div>
+        <div class = "col-lg-3">
+          <div class="row"> 
+            <div class = "col-lg-5">
+               <%= number_field_tag 'reserva["calentadores_de_comida"]' , nil , :class=>"form-control",:placeholder =>"0" %>  
+            </div>
+            <div class ="col-lg-7">
+              Calentadores Comida
+              <br> Bs.- 100 c/u
+            </div>
+          </div>
+        </div>   
+      </div>
+
+      <br><br>
+
+      <div class="row">
+        <div class = "col-lg-3">
+          <div class="row"> 
+            <div class = "col-lg-5">
+               <%= number_field_tag 'reserva["tazas_con_platillos"]' , nil , :class=>"form-control",:placeholder =>"0" %>  
+            </div>
+            <div class ="col-lg-7">
+              Tazas con Platillos
+              <br> Bs.- 100 c/u
+            </div>
+          </div>
+        </div>
+        <div class = "col-lg-3">
+          <div class="row"> 
+            <div class = "col-lg-5">
+               <%= number_field_tag 'reserva["teteras"]' , nil , :class=>"form-control",:placeholder =>"0" %>  
+            </div>
+            <div class ="col-lg-7">
+              Teteras
+              <br> Bs.- 100 c/u
+            </div>
+          </div>
+        </div>
+        <div class = "col-lg-3">
+          <div class="row"> 
+            <div class = "col-lg-5">
+               <%= number_field_tag 'reserva["azucareros"]' , nil , :class=>"form-control",:placeholder =>"0" %>  
+            </div>
+            <div class ="col-lg-7">
+              Azucareros
+              <br> Bs.- 100 c/u
+            </div>
+          </div>
+        </div>
+        <div class = "col-lg-3">
+          <div class="row"> 
+            <div class = "col-lg-5">
+               <%= number_field_tag 'reserva["espatula_para_torta"]' , nil , :class=>"form-control",:placeholder =>"0" %>  
+            </div>
+            <div class ="col-lg-7">
+              Espatula para Torta
+              <br> Bs.- 100 c/u
+            </div>
+          </div>
+        </div>   
+      </div>
+
+      <br><br>
+
+      <div class="row">
+        <div class = "col-lg-3">
+          <div class="row"> 
+            <div class = "col-lg-5">
+               <%= number_field_tag 'reserva["calentador_de_ambiente"]' , nil , :class=>"form-control",:placeholder =>"0" %>  
+            </div>
+            <div class ="col-lg-7">
+              Calentador de ambiente
+              <br> Bs.- 100 c/u
+            </div>
+          </div>
+        </div>
+        <div class = "col-lg-3">
+          <div class="row"> 
+            <div class = "col-lg-5">
+               <%= number_field_tag 'reserva["fuentes_para_bocaditos"]' , nil , :class=>"form-control",:placeholder =>"0" %>  
+            </div>
+            <div class ="col-lg-7">
+              Fuentes para Bocaditos
+              <br> Bs.- 100 c/u
+            </div>
+          </div>
+        </div>
+        <div class = "col-lg-3">
+          <div class="row"> 
+            <div class = "col-lg-5">
+               <%= number_field_tag 'reserva["fuentes_para_bufet"]' , nil , :class=>"form-control",:placeholder =>"0" %>  
+            </div>
+            <div class ="col-lg-7">
+              Fuentes para bufet
+              <br> Bs.- 100 c/u
+            </div>
+          </div>
+        </div>
+        <div class = "col-lg-3">
+          <div class="row"> 
+            <div class = "col-lg-5">
+               <%= number_field_tag 'reserva["toldo_16x8"]' , nil , :class=>"form-control",:placeholder =>"0" %>  
+            </div>
+            <div class ="col-lg-7">
+              Toldo 16x8
+              <br> Bs.- 100 c/u
+            </div>
+          </div>
+        </div>   
+      </div>
+
+
+      <h3>Combos</h3>
+
+      <br><br>
+      
+      <div class="row">
+        <div class = "col-lg-3">
+          <div class="row"> 
+            <div class = "col-lg-5">
+               <%= number_field_tag 'reserva["laterales_por_metro"]' , nil , :class=>"form-control",:placeholder =>"0" %>  
+            </div>
+            <div class ="col-lg-7">
+              Laterales por Metro
+              <br> Bs.- 100 c/u
+            </div>
+          </div>
+        </div>
+        <div class = "col-lg-3">
+          <div class="row"> 
+            <div class = "col-lg-5">
+               <%= number_field_tag 'reserva["porta_cockey_de_cristal"]' , nil , :class=>"form-control",:placeholder =>"0" %>  
+            </div>
+            <div class ="col-lg-7">
+              Porta Cockey de Cristal
+              <br> Bs.- 100 c/u
+            </div>
+          </div>
+        </div>
+        <div class = "col-lg-3">
+          <div class="row"> 
+            <div class = "col-lg-5">
+               <%= number_field_tag 'reserva["mesa_de_niños_con_sillitas_hiani_y_mantel_para_10_ninos"]' , nil , :class=>"form-control",:placeholder =>"0" %>  
+            </div>
+            <div class ="col-lg-7">
+              Mesa de Niños con Sillitas Hiani y Mantel (10 niños)
+              <br> Bs.- 100 c/u
+            </div>
+          </div>
+        </div>
+        <div class = "col-lg-3">
+          <div class="row"> 
+            <div class = "col-lg-5">
+               <%= number_field_tag 'reserva["mesa_alta_de_bar_con_4_sillas_giratorias"]' , nil , :class=>"form-control",:placeholder =>"0" %>  
+            </div>
+            <div class ="col-lg-7">
+              Mesa Alta de Bar con 4 Sillas Giratorias
+              <br> Bs.- 100 c/u
+            </div>
+          </div>
+        </div>   
+      </div>
+      <br><br>
+
+      <center>
+        <div class="actions">
+          <%= f.submit 'Enviar', :class => 'btn btn-success'%>
+        </div>
+      </center>
+    <% end %>
+
